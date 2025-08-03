@@ -1,3 +1,8 @@
+//Time Complexity :O(log n)
+//Space Complexity :O(1)
+//Did this code successfully run on Leetcode : No ( Leetcode Premium Proplem)
+//Any problem you faced while coding this : I was supposed to write the ArrayReader method to do this coding
+
 package Samples;
 
 //You would normally be given this interface.
@@ -38,8 +43,8 @@ public class SearchInUnknownSizedArray {
  // Example stub for testing purposes
  public static void main(String[] args) {
      // Simulate the secret array and reader
-     int[] secret = {-1, 0, 3, 5, 9, 12};
-     int target = 9;
+     int[] secret = {-1, 0, 3, 5, 9, 12,19,23,29,37,41,43,47,51,55,58,66,69,71,89,93,99};
+     int target = 41;
 
      ArrayReader reader = new ArrayReader() {
          @Override
@@ -51,6 +56,7 @@ public class SearchInUnknownSizedArray {
 
      SearchInUnknownSizedArray sol = new SearchInUnknownSizedArray();
      int result = sol.search(reader, target);
-     System.out.println("Output: " + result); // Expected: 4
+     System.out.println("Output: " + result); 
  }
 }
+
